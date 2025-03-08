@@ -1,0 +1,2 @@
+id_transaction,url_nfe,establishment,buy_address,dt_ticket,dt_launch,situation,fk_id_account,fk_id_subcategory,fk_id_transaction_type,date_up,date_down
+1,https://sat.sef.sc.gov.br/tax.NET/Sat.DFe.NFCe.Web/Consultas/NFCe_Detalhes.aspx?rq=t8BOzGQxqyGqhHoqbl64LajPpqblFhB6Ah%2BwHPzwmtIvH3LJBjiTyCP%2FWDLjv1lNuUth3nWSe1gdLpVNTff4cr0cIgxvJqKPYzsh5S0rfbwBmHD6vpqUPI6wJkqF6JEpG15brYdADv9wsbwTyy2bwjY8FTKuKifq,MINIMERCADO RODAN LTDA,"RUA JOSE LUIZ MARCELINO , 495 , , MURTA , ITAJAI , SC",2025-03-01 17:15:16,2025-03-08 10:06:32,,2,5,1,2025-03-08 10:06:32,2025-03-08 10:06:32
