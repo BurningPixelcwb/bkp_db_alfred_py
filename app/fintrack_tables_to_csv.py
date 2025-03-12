@@ -20,7 +20,10 @@ def main():
         # Export table data to csv
         for table in tables:
             df = pd.read_sql(f"SELECT * FROM `{table}`", connection)
-            df.to_csv(f"{get_csv_path()}/{table}.csv", index=False)
+            df.to_csv(
+                f"{get_csv_path()}/{table}.csv", 
+                index=False
+            )
 
     except Exception as e:
         print(f"Error: {e}")

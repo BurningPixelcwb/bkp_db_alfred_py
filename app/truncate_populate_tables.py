@@ -19,10 +19,10 @@ def main():
         ]
 
         truncate_tables(cursor, tables)
-
+        load_csv_to_db(cursor, connection, get_csv_path())
         enable_foreign_keys(cursor)
 
-        load_csv_to_db(cursor, connection, get_csv_path())
+        
 
     except Exception as e:
         print(f"Error: {e}")

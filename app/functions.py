@@ -85,17 +85,23 @@ def load_csv_to_db(cursor, connection, csv_dir):
         connection (pymysql.connections.Connection): Database connection.
         csv_dir (str): Path of the directory containing the CSV files.
     """
+    
+    
     for file in get_csv_files(csv_dir):
         table_name = os.path.splitext(file)[0]
         csv_path = os.path.join(csv_dir, file)
 
         df = pd.read_csv(csv_path)
+        df = df.fillna("")
 
         columns = ", ".join(df.columns)
+
         placeholders = ", ".join(["%s"] * len(df.columns))
+
         sql = f"INSERT INTO {table_name} ({columns}) VALUES ({placeholders})"
 
         cursor.executemany(sql, df.values.tolist())
+
         connection.commit()
 
 
